@@ -1,0 +1,26 @@
+/**
+font-family: 'Electrolize', sans-serif; - Thinnest font
+font-family: 'Aldrich', sans-serif; - Second thinnest font
+font-family: 'Sarpanch', sans-serif; - For headers
+*/
+
+/**
+blackish - #0a0f0d
+dark blue - #0b3c49
+Maroon - #41292c
+Reddish - #d33f49
+Flo green - #5dd368
+*/
+
+html {
+  background-color: #0a0f0d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sarpanch", sans-serif;
+}

@@ -1,2 +1,7 @@
 # transientcw.github.io
-Portfolio
+
+Portfolio Website
+
+#Contributors
+Chris Wilson
+http://cswilson.site
