@@ -6,14 +6,36 @@ font-family: 'Sarpanch', sans-serif; - For headers
 
 /**
 blackish - #0a0f0d
-dark blue - #0b3c49
+dark jade - #0b3c49
 Maroon - #41292c
 Reddish - #d33f49
 Flo green - #5dd368
 */
 
-html {
-  background-color: #0a0f0d;
+html,
+body {
+  background-image: linear-gradient(
+    to left bottom,
+    #41292c,
+    #402a36,
+    #3b2e40,
+    #313247,
+    #22374b,
+    #1b4559,
+    #0e5364,
+    #00616b,
+    #007e7d,
+    #009c82,
+    #00b87b,
+    #5dd368
+  );
+  font-family: 'Electrolize', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
 }
 
 h1,
@@ -22,5 +44,31 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Sarpanch", sans-serif;
+  font-family: 'Sarpanch', sans-serif;
+  color: white;
+}
+
+hr {
+  height: 2px;
+  color: #00b87b;
+  background-color: #00b87b;
+  border: none;
+}
+
+.header-row > .header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-row > .header > nav > #navLinks > .navbar-nav > a {
+  margin: 0 20px;
+  color: #5dd368;
+  font-family: 'Electrolize', sans-serif;
+  font-weight: lighter;
+  padding-bottom: 0;
+}
+
+.header-row > .header > nav > #navLinks > .navbar-nav > a:hover {
+  color: #d33f49;
+  text-shadow: 1px 1px 15px #5dd368;
 }
