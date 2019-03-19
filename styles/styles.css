@@ -29,13 +29,14 @@ body {
     #00b87b,
     #5dd368
   );
-  font-family: 'Electrolize', sans-serif;
+  font-family: "Electrolize", sans-serif;
 }
 
 body {
   width: 100vw;
   height: 100vh;
   color: #fff;
+  padding: 15px;
 }
 
 h1,
@@ -44,31 +45,55 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Sarpanch', sans-serif;
-  color: white;
+  font-family: "Sarpanch", sans-serif;
+  color: darkgray;
 }
 
 hr {
   height: 2px;
-  color: #00b87b;
-  background-color: #00b87b;
+  color: #d33f49;
+  background-color: #d33f49;
   border: none;
 }
 
-.header-row > .header {
+.header-nav {
   display: flex;
   justify-content: flex-end;
 }
 
-.header-row > .header > nav > #navLinks > .navbar-nav > a {
-  margin: 0 20px;
-  color: #5dd368;
-  font-family: 'Electrolize', sans-serif;
-  font-weight: lighter;
-  padding-bottom: 0;
+.nav-link {
+  color: #5dd368 !important;
+  font-family: "Electrolize", sans-serif !important;
 }
 
-.header-row > .header > nav > #navLinks > .navbar-nav > a:hover {
-  color: #d33f49;
-  text-shadow: 1px 1px 15px #5dd368;
+.nav-link:hover {
+  color: #5dd368 !important;
+  text-shadow: 1px 1px 15px #d33f49 !important;
+}
+
+.toggler {
+  background: transparent;
+  border: 1px solid darkgray;
+  border-radius: 0.25em;
+}
+
+.toggler:active,
+.toggler:focus {
+  outline: none;
+}
+
+.fas.fa-bars {
+  color: #00b87b !important;
+}
+
+@media only screen and (max-width: 575px) {
+  .header-nav {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 575px) {
+  .toggler {
+    visibility: hidden;
+  }
 }
