@@ -35,7 +35,7 @@ body {
 body {
   width: 100vw;
   height: 100vh;
-  color: #fff;
+  color: darkgray;
   padding: 15px;
 }
 
@@ -61,7 +61,8 @@ hr {
 }
 
 .name h4 {
-  color: #fff;
+  color: darkgray;
+  text-shadow: 1px 1px 2px #d33f49;
 }
 
 .circle {
@@ -113,7 +114,8 @@ hr {
 
 .toggler {
   background: transparent;
-  border: 1px solid #fff;
+  border: 1px solid darkgray;
+  text-shadow: 1px 1px 2px #d33f49;
   border-radius: 0.25em;
 }
 
@@ -123,7 +125,7 @@ hr {
 }
 
 .fas.fa-bars {
-  color: #fff !important;
+  color: #d33f49 !important;
 }
 
 @media only screen and (max-width: 575px) {
