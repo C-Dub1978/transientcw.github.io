@@ -54,6 +54,13 @@ hr {
   color: #d33f49;
   background-color: #d33f49;
   border: none;
+  margin-top: 5px !important;
+}
+
+.header-row {
+  background-image: url("../images/honeycomb.png");
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 .name {
@@ -67,23 +74,15 @@ hr {
 
 .circle {
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   opacity: 0;
   animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
 }
 
-.circle.green {
-  background: #5dd368;
-}
-
 .circle.red {
   background: #d33f49;
-}
-
-.circle.jade {
-  background: #0b3c49;
 }
 
 @keyframes scaleIn {
