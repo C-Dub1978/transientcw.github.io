@@ -138,9 +138,58 @@ nav {
   color: #d33f49 !important;
 }
 
+.row.about,
+.row.projects,
+.row.designs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.terminal-menu {
+  width: 60%;
+  height: 30px;
+  background: darkgray;
+  margin: 0;
+  padding: 0;
+}
+
+.terminal-menu > ul {
+  list-style: none;
+  padding: 0 0 0 15px;
+  height: 30px;
+  margin: 0;
+}
+
+.terminal-menu > ul > li {
+  font-family: "Electrolize", sans-serif;
+  font-weight: 100;
+  color: #000;
+  display: inline;
+  margin: 0 8px;
+}
+
+.terminal-body {
+  width: 60%;
+  height: 350px;
+  background: #0b3c49;
+  border: 1px solid darkgray;
+}
+
 @media only screen and (max-width: 575px) {
   .header-nav {
     justify-content: flex-start;
+  }
+
+  .terminal-menu,
+  .terminal-body {
+    width: 90%;
+  }
+
+  .terminal-menu > ul > li {
+    font-size: 0.6rem;
   }
 }
 
