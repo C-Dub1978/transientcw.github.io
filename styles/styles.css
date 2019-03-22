@@ -28,6 +28,8 @@ body {
     #00b87b,
     #5dd368
   );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: "Electrolize", sans-serif;
 }
 
@@ -162,7 +164,7 @@ nav {
 
 .terminal-body {
   width: 60%;
-  height: 250px;
+  height: 500px;
   background: #0b3c49;
   border: 1px solid darkgray;
   color: #d33f49;
@@ -170,13 +172,13 @@ nav {
 }
 
 .terminal-prompt {
-  height: 200px;
+  height: 460px;
   padding: 0 15px;
   margin: 0;
 }
 
 .localhost {
-  height: 30px;
+  height: 50px;
   width: 100%;
   padding: 0 15px;
   margin: 0;
@@ -194,6 +196,10 @@ nav {
 
   .terminal-menu > ul > li {
     font-size: 0.6rem;
+  }
+
+  .terminal-body {
+    height: 500px;
   }
 }
 
