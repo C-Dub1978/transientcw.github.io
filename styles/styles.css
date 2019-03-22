@@ -169,6 +169,7 @@ nav {
   border: 1px solid darkgray;
   color: #d33f49;
   padding: 15px;
+  box-shadow: 1px 1px 10px #000;
 }
 
 .terminal-prompt {
