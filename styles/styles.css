@@ -12,7 +12,6 @@ Reddish - #d33f49
 Flo green - #5dd368
 */
 
-html,
 body {
   background-image: linear-gradient(
     to left bottom,
@@ -37,6 +36,7 @@ body {
   height: 100vh;
   color: darkgray;
   padding: 15px;
+  z-index: -2;
 }
 
 h1,
@@ -74,26 +74,15 @@ hr {
 
 .circle {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   position: absolute;
-  opacity: 0;
-  animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+  opacity: 0.3;
+  z-index: -1;
 }
 
 .circle.red {
   background: #d33f49;
-}
-
-@keyframes scaleIn {
-  from {
-    transform: scale(0.5, 0.5);
-    opacity: 0.5;
-  }
-  to {
-    transform: scale(2.5, 2.5);
-    opacity: 0;
-  }
 }
 
 .name-description h5 {
@@ -173,9 +162,24 @@ nav {
 
 .terminal-body {
   width: 60%;
-  height: 350px;
+  height: 250px;
   background: #0b3c49;
   border: 1px solid darkgray;
+  color: #d33f49;
+  padding: 15px;
+}
+
+.terminal-prompt {
+  height: 200px;
+  padding: 0 15px;
+  margin: 0;
+}
+
+.localhost {
+  height: 30px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0;
 }
 
 @media only screen and (max-width: 575px) {
