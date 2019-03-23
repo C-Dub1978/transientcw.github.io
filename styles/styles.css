@@ -83,103 +83,97 @@ hr {
   right: 24px;
 }
 
-.nav-tabs {
+.nav {
   border-bottom: 1px solid #5dd368;
+  border-radius: 8px;
+  height: 30px;
 }
 
-.nav-link {
+a.nav-links {
   color: #5dd368;
   font-family: "Electrolize", sans-serif;
+  margin: 0 10px;
 }
 
-.nav-link:hover {
-  color: #5dd368;
-}
-
-.nav-link:focus {
-  border: 1px solid #d33f49;
-}
-
-.toggler {
-  background: transparent;
-  border: 1px solid darkgray;
-  text-shadow: 1px 1px 2px #d33f49;
-  border-radius: 0.25em;
-}
-
-.toggler:active,
-.toggler:focus {
+a.nav-links:hover,
+a.nav-links:hover {
+  color: #d33f49;
+  border: none;
   outline: none;
-}
-
-.fas.fa-bars {
-  color: #d33f49 !important;
+  text-decoration: none;
 }
 
 .row.about,
 .row.projects,
 .row.designs {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin-top: 50px;
-  padding-right: 0 !important;
-  width: 98%;
 }
 
 .terminal-menu {
-  width: 60%;
-  height: 30px;
   background: darkgray;
-  margin: 0;
-  padding: 0;
+  height: 30px;
+  width: 60%;
 }
 
 .terminal-menu > ul {
-  list-style: none;
-  padding: 0 0 0 15px;
   height: 30px;
+  list-style: none;
   margin: 0;
+  padding: 0 0 0 15px;
 }
 
 .terminal-menu > ul > li {
-  font-family: "Electrolize", sans-serif;
-  font-weight: 100;
   color: #000;
   display: inline;
+  font-family: "Electrolize", sans-serif;
+  font-weight: 100;
   margin: 0 8px;
 }
 
 .terminal-body {
-  width: 60%;
-  height: 500px;
   background: #0b3c49;
   border: 1px solid darkgray;
-  color: #d33f49;
-  padding: 15px;
   box-shadow: 1px 1px 10px #d33f49;
-}
-
-.test {
-  width: 150px;
-  height: 200px;
-  background: black;
+  color: #d33f49;
+  height: 500px;
+  padding-top: 15px;
+  width: 60%;
 }
 
 .terminal-prompt {
-  height: 460px;
-  padding: 0 15px;
-  margin: 0;
   color: darkgray;
+  height: 460px;
+  margin: 0;
+  padding: 0 15px;
 }
 
 .localhost {
-  height: 50px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0;
   color: #5dd368;
+  height: 50px;
+  margin: 0;
+  padding: 0 15px;
+  width: 100%;
+}
+
+@keyframes prompt {
+  from {
+    border: 1px solid darkgray;
+  }
+  to {
+    border: none;
+  }
+}
+
+.prompt-box {
+  width: 10px;
+  height: 20px;
+  border: 1px solid #d33f49;
+  display: inline-block;
+  animation-name: prompt;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  position: relative;
+  top: 3px;
 }
 
 @media only screen and (max-width: 575px) {
@@ -194,10 +188,18 @@ hr {
 
   .terminal-menu > ul > li {
     font-size: 0.6rem;
+    margin-left: 2px;
+    margin-right: 2px;
   }
 
   .terminal-body {
     height: 500px;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .terminal-menu > ul > li {
+    font-size: 0.6rem;
   }
 }
 

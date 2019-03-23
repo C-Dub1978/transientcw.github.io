@@ -22,13 +22,14 @@
     href="styles/styles.css">
 </head>
 <body>
+  <!-- Header/Nav -->
   <div class="container-fluid">
     <header class="row header-row">
       <div class="row name">
         <h4>Christopher S. Wilson</h4>
       </div>
       <div class="circle"></div>
-      <div class="row nav-row justify-content-between">
+      <div class="row nav-row justify-content-between align-items-center">
         <span class="name-description">
           <img src="/images/angular.png"
             alt="Angular Icon"
@@ -36,21 +37,21 @@
             width="70px">
           <h5>ngular Developer</h5>
         </span>
-        <ul class="nav nav-tabs justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link"
+        <ul class="nav justify-content-end">
+          <li>
+            <a class="nav-links"
               href="#">Projects</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link"
+          <li>
+            <a class="nav-links"
               href="#">Designs</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link"
+          <li>
+            <a class="nav-links"
               href="#">Github</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link"
+          <li>
+            <a class="nav-links"
               href="#">Contact</a>
           </li>
         </ul>
@@ -58,6 +59,39 @@
     </header>
     <hr>
   </div>
+  <!-- End header nav -->
+  <!-- About section -->
+  <section
+  class="container-fluid
+         d-flex
+         flex-column
+         justify-content-center
+         align-items-center">
+    <div class="row about">
+      <h5>About</h5>
+    </div>
+    <div class="row terminal-menu">
+      <ul>
+        <li>File</li>
+        <li>Edit</li>
+        <li>View</li>
+        <li>Search</li>
+        <li>Terminal</li>
+        <li>Help</li>
+      </ul>
+    </div>
+    <div
+    class="row
+            terminal-body
+            d-flex
+            flex-row
+            justify-content-start
+             align-items-start">
+    <h6 class="localhost">localUser at localmachine.localhost#</h6>
+    <div class="terminal-prompt"
+      id="terminal-prompt"></div>
+    </div>
+  </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
   integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"

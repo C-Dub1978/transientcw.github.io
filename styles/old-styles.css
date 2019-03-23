@@ -207,12 +207,6 @@ nav {
   color: #5dd368;
 }
 
-.project-container {
-  width: 350px;
-  height: 250px;
-  background: black;
-}
-
 @keyframes prompt {
   from {
     border: 1px solid #d33f49;
