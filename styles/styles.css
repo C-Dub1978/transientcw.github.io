@@ -1,3 +1,26 @@
+/**
+font-family: 'Electrolize', sans-serif; - Thinnest font
+font-family: 'Aldrich', sans-serif; - Second thinnest font
+font-family: 'Sarpanch', sans-serif; - For headers
+*/
+
+/**
+blackish - #0a0f0d
+dark jade - #0b3c49
+Maroon - #41292c
+Reddish - #d33f49
+Flo green - #5dd368
+*/
+
+@keyframes prompt {
+  from {
+    border: 1px solid darkgray;
+  }
+  to {
+    border: none;
+  }
+}
+
 body {
   background-attachment: fixed;
   background-image: linear-gradient(
@@ -37,8 +60,15 @@ hr {
   background-color: #d33f49;
   border: none;
   color: #d33f49;
-  height: 2px;
+  height: 1px;
   margin-top: 5px;
+}
+
+hr.horizontal-partial {
+  box-shadow: 1px 1px 2px #5dd368;
+  height: 3px;
+  margin-top: 50px;
+  width: 50%;
 }
 
 .header-row {
@@ -60,10 +90,10 @@ hr {
 .circle {
   background: #d33f49;
   border-radius: 50%;
-  top: 5px;
   height: 200px;
   opacity: 0.3;
   position: absolute;
+  top: 5px;
   width: 200px;
   z-index: -1;
 }
@@ -97,8 +127,8 @@ a.nav-links {
 
 a.nav-links:hover,
 a.nav-links:hover {
-  color: #d33f49;
   border: none;
+  color: #d33f49;
   outline: none;
   text-decoration: none;
 }
@@ -135,7 +165,7 @@ a.nav-links:hover {
   border: 1px solid darkgray;
   box-shadow: 1px 1px 10px #d33f49;
   color: #d33f49;
-  height: 500px;
+  height: 300px;
   padding-top: 15px;
   width: 60%;
 }
@@ -155,13 +185,21 @@ a.nav-links:hover {
   width: 100%;
 }
 
-@keyframes prompt {
-  from {
-    border: 1px solid darkgray;
-  }
-  to {
-    border: none;
-  }
+.card {
+  background: #0b3c49;
+  border: 1px solid darkgray;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px #d33f49;
+  height: 350px;
+  width: 300px;
+  margin: 15px 15px;
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .prompt-box {
@@ -197,9 +235,13 @@ a.nav-links:hover {
   }
 }
 
-@media only screen and (max-width: 775px) {
+@media only screen and (max-width: 800px) {
   .terminal-menu > ul > li {
     font-size: 0.6rem;
+  }
+
+  .terminal-body {
+    height: 500px;
   }
 }
 
