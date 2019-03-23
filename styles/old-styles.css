@@ -1,5 +1,22 @@
+/**
+font-family: 'Electrolize', sans-serif; - Thinnest font
+font-family: 'Aldrich', sans-serif; - Second thinnest font
+font-family: 'Sarpanch', sans-serif; - For headers
+*/
+
+/**
+blackish - #0a0f0d
+dark jade - #0b3c49
+Maroon - #41292c
+Reddish - #d33f49
+Flo green - #5dd368
+*/
+
+html {
+  overflow-x: hidden;
+}
+
 body {
-  background-attachment: fixed;
   background-image: linear-gradient(
     to left bottom,
     #41292c,
@@ -16,10 +33,17 @@ body {
     #5dd368
   );
   background-repeat: no-repeat;
-  color: darkgray;
+  background-attachment: fixed;
   font-family: "Electrolize", sans-serif;
-  height: 100vh;
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+}
+
+body {
   width: 100vw;
+  height: 100vh;
+  color: darkgray;
+  padding: 15px;
   z-index: -2;
 }
 
@@ -29,32 +53,22 @@ h3,
 h4,
 h5,
 h6 {
-  color: darkgray;
   font-family: "Sarpanch", sans-serif;
+  color: darkgray;
 }
 
 hr {
+  height: 2px;
+  color: #d33f49;
   background-color: #d33f49;
   border: none;
-  color: #d33f49;
-  height: 2px;
-  margin-top: 5px;
+  margin-top: 5px !important;
 }
 
 .header-row {
   background-image: url("../images/honeycombSmall.png");
   background-repeat: repeat;
   background-size: contain;
-}
-
-.circle {
-  background: #d33f49;
-  border-radius: 50%;
-  height: 200px;
-  opacity: 0.3;
-  position: absolute;
-  width: 200px;
-  z-index: -1;
 }
 
 .name {
@@ -66,10 +80,33 @@ hr {
   text-shadow: 1px 1px 2px #d33f49;
 }
 
+.circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.circle.red {
+  background: #d33f49;
+}
+
 .name-description h5 {
   display: inline;
   position: relative;
   right: 24px;
+}
+
+nav {
+  padding-bottom: 0 !important;
+}
+
+.navbar,
+.container-fluid,
+.row {
+  padding-right: 0 !important;
 }
 
 .header-nav {
@@ -107,10 +144,10 @@ hr {
 .row.about,
 .row.projects,
 .row.designs {
-  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 50px;
   padding-right: 0 !important;
   width: 98%;
@@ -168,6 +205,33 @@ hr {
   padding: 0 15px;
   margin: 0;
   color: #5dd368;
+}
+
+.project-container {
+  width: 350px;
+  height: 250px;
+  background: black;
+}
+
+@keyframes prompt {
+  from {
+    border: 1px solid #d33f49;
+  }
+  to {
+    border: none;
+  }
+}
+
+.prompt-box {
+  width: 10px;
+  height: 20px;
+  border: 1px solid #d33f49;
+  display: inline-block;
+  animation-name: prompt;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  position: relative;
+  top: 3px;
 }
 
 @media only screen and (max-width: 575px) {

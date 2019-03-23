@@ -15,5 +15,8 @@ function type() {
     document.getElementById("terminal-prompt").innerHTML += intro.charAt(i);
     i++;
     setTimeout(type, 10);
+  } else {
+    document.getElementById("terminal-prompt").innerHTML +=
+      '<div class="prompt-box"></div>';
   }
 }
