@@ -45,16 +45,7 @@ hr {
   background-image: url("../images/honeycombSmall.png");
   background-repeat: repeat;
   background-size: contain;
-}
-
-.circle {
-  background: #d33f49;
-  border-radius: 50%;
-  height: 200px;
-  opacity: 0.3;
-  position: absolute;
-  width: 200px;
-  z-index: -1;
+  padding: 25px;
 }
 
 .name {
@@ -66,26 +57,47 @@ hr {
   text-shadow: 1px 1px 2px #d33f49;
 }
 
+.circle {
+  background: #d33f49;
+  border-radius: 50%;
+  top: 5px;
+  height: 200px;
+  opacity: 0.3;
+  position: absolute;
+  width: 200px;
+  z-index: -1;
+}
+
+.row.name,
+.row.nav-row {
+  width: 100%;
+}
+
+.nav-row {
+  padding-left: 100px;
+}
+
 .name-description h5 {
   display: inline;
   position: relative;
   right: 24px;
 }
 
-.header-nav {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 100px;
+.nav-tabs {
+  border-bottom: 1px solid #5dd368;
 }
 
 .nav-link {
-  color: #5dd368 !important;
-  font-family: "Electrolize", sans-serif !important;
+  color: #5dd368;
+  font-family: "Electrolize", sans-serif;
 }
 
 .nav-link:hover {
-  color: #5dd368 !important;
-  text-shadow: 1px 1px 15px #d33f49 !important;
+  color: #5dd368;
+}
+
+.nav-link:focus {
+  border: 1px solid #d33f49;
 }
 
 .toggler {
