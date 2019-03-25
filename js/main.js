@@ -52,7 +52,7 @@ const projects = [
     title: "The Application:",
     label: "Kinect 40s",
     description: "Tic tac toe for drunks, winos & alcoholics!",
-    about: `This is a game I build using Java and Swing for the UI. I built this
+    about: `This is a game I built using Java and Swing for the UI. I built this
     game in between my first and second semester of college coding courses. It
     is simply a tic-tac-toe style game with graphics, and I wrote custom logic
     to play against the computer. It can also be played in 2 player mode. Grab
