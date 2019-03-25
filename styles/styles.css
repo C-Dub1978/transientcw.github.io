@@ -21,6 +21,10 @@ Flo green - #5dd368
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-attachment: fixed;
   background-image: linear-gradient(
@@ -119,14 +123,15 @@ hr.horizontal-partial {
   height: 30px;
 }
 
-a.nav-links {
+a.nav-links,
+a.modal-links {
   color: #5dd368;
   font-family: "Electrolize", sans-serif;
   margin: 0 10px;
 }
 
 a.nav-links:hover,
-a.nav-links:hover {
+a.modal-links:hover {
   border: none;
   color: #d33f49;
   outline: none;
@@ -185,16 +190,28 @@ a.nav-links:hover {
   width: 100%;
 }
 
+.prompt-box {
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-name: prompt;
+  border: 1px solid #d33f49;
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  top: 3px;
+  width: 10px;
+}
+
 .card {
   background: #0b3c49;
   border: 1px solid darkgray;
   border-radius: 8px;
   box-shadow: 1px 1px 10px #d33f49;
   height: 350px;
-  width: 300px;
   margin: 15px 15px;
   padding: 15px;
   transition: all 0.3s ease-in-out;
+  width: 300px;
 }
 
 .card:hover {
@@ -202,16 +219,53 @@ a.nav-links:hover {
   transform: scale(1.1);
 }
 
-.prompt-box {
-  width: 10px;
-  height: 20px;
-  border: 1px solid #d33f49;
-  display: inline-block;
-  animation-name: prompt;
-  animation-duration: 0.9s;
-  animation-iteration-count: infinite;
-  position: relative;
-  top: 3px;
+.card-title {
+  margin-top: 10px;
+}
+
+.card-label {
+  color: #00b87b;
+  font-family: "Aldrich", sans-serif;
+}
+
+.card > figcaption {
+  color: #00b87b;
+}
+
+.card-image-small {
+  height: 190px;
+  margin: 0;
+  object-fit: contain;
+  padding: 0;
+  width: 270px;
+}
+
+.card-image-large {
+  margin: 0;
+  max-height: 225px;
+  max-width: 250px;
+  object-fit: contain;
+  padding: 0;
+}
+
+.modal-content {
+  background-attachment: fixed;
+  background-image: linear-gradient(
+    to left bottom,
+    #d33f49,
+    #b73870,
+    #884386,
+    #4f4a86,
+    #174872,
+    #00425e,
+    #003a49,
+    #0d3136,
+    #0f292a,
+    #10201f,
+    #0f1816,
+    #0a0f0d
+  );
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 575px) {
