@@ -233,9 +233,10 @@ a.modal-links:hover {
 }
 
 .card-image-small {
-  height: 190px;
+  height: 150px;
   margin: 0;
   object-fit: contain;
+  overflow: hidden;
   padding: 0;
   width: 270px;
 }
