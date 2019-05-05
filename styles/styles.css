@@ -269,6 +269,28 @@ a.modal-links:hover {
   background-repeat: no-repeat;
 }
 
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  cursor: pointer;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
 @media only screen and (max-width: 575px) {
   .header-nav {
     justify-content: flex-start;
